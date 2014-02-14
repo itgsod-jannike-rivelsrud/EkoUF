@@ -2,11 +2,11 @@ class Email
   require 'mail'
   def self.order(content)
     Mail.defaults do
-      delivery_method :smtp, { :address   => "smtp.learnet.se",
+      delivery_method :smtp, { :address   => "smtp.sendgrid.net",
                                :port      => 587,
-                               :domain    => "learnet.se",
-                               :user_name => "jannike.rivelsrud@elev.it-gymnasiet.se",
-                               :password  => "Petter",
+                               :domain    => "heroku.com",
+                               :user_name => "app22179239@heroku.com",
+                               :password  => "3va7phns",
                                :authentication => 'plain',
                                :enable_starttls_auto => true }
     end

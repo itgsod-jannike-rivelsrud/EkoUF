@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85e6a35e-55d9-46a6-8c19-811bc99912e7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ekouf.rb" afterPath="$PROJECT_DIR$/ekouf.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/email.rb" afterPath="$PROJECT_DIR$/models/email.rb" />
     </list>
     <list id="203ba955-0aaa-43d6-b589-646c87417c8d" name="New changelist" comment="" />
     <ignored path="EkoUF.iws" />
@@ -41,8 +41,8 @@
     <file path="/order.rb" changelist="85e6a35e-55d9-46a6-8c19-811bc99912e7" time="1392377284070" ignored="false" />
     <file path="/user.rb" changelist="85e6a35e-55d9-46a6-8c19-811bc99912e7" time="1392376895348" ignored="false" />
     <file path="/tips.rb" changelist="85e6a35e-55d9-46a6-8c19-811bc99912e7" time="1392376999185" ignored="false" />
-    <file path="/email.rb" changelist="85e6a35e-55d9-46a6-8c19-811bc99912e7" time="1392385328693" ignored="false" />
-    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="85e6a35e-55d9-46a6-8c19-811bc99912e7" time="1392385959474" ignored="false" />
+    <file path="/email.rb" changelist="85e6a35e-55d9-46a6-8c19-811bc99912e7" time="1392387187410" ignored="false" />
+    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="85e6a35e-55d9-46a6-8c19-811bc99912e7" time="1392387193440" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,19 +62,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ekouf.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ekouf.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ekouf.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="21" selection-start="423" selection-end="423" vertical-scroll-proportion="0.66780823">
+            <state line="26" column="21" selection-start="423" selection-end="423" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="email.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="email.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/models/email.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="62" selection-start="512" selection-end="512" vertical-scroll-proportion="0.0">
+            <state line="6" column="56" selection-start="248" selection-end="248" vertical-scroll-proportion="0.15075377">
               <folding />
             </state>
           </provider>
@@ -174,9 +174,9 @@
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/models/order.rb" />
         <option value="$PROJECT_DIR$/views/product/order.slim" />
-        <option value="$PROJECT_DIR$/models/email.rb" />
         <option value="$PROJECT_DIR$/views/layout.slim" />
         <option value="$PROJECT_DIR$/ekouf.rb" />
+        <option value="$PROJECT_DIR$/models/email.rb" />
       </list>
     </option>
   </component>
@@ -625,13 +625,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/product/order.slim">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="50" selection-start="410" selection-end="410" vertical-scroll-proportion="-4.375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/environment.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="19" selection-start="257" selection-end="257" vertical-scroll-proportion="0.0">
@@ -639,9 +632,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/development.rb">
+    <entry file="file://$PROJECT_DIR$/ekouf.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="64" selection-start="257" selection-end="257" vertical-scroll-proportion="0.0">
+        <state line="26" column="21" selection-start="423" selection-end="423" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -653,9 +646,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/email.rb">
+    <entry file="file://$PROJECT_DIR$/views/product/order.slim">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="62" selection-start="512" selection-end="512" vertical-scroll-proportion="0.0">
+        <state line="7" column="50" selection-start="410" selection-end="410" vertical-scroll-proportion="-4.375">
           <folding />
         </state>
       </provider>
@@ -667,9 +660,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ekouf.rb">
+    <entry file="file://$PROJECT_DIR$/config/development.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="21" selection-start="423" selection-end="423" vertical-scroll-proportion="0.66780823">
+        <state line="6" column="64" selection-start="257" selection-end="257" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/email.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="56" selection-start="248" selection-end="248" vertical-scroll-proportion="0.15075377">
           <folding />
         </state>
       </provider>
