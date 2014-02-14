@@ -2,11 +2,11 @@ class Email
   require 'mail'
   def self.order(content)
     Mail.defaults do
-      delivery_method :smtp, { :address   => "smtp.gmail.com",
+      delivery_method :smtp, { :address   => "smtp.learnet.se",
                                :port      => 587,
-                               :domain    => "gmail.com",
-                               :user_name => "jannike.rivelsrud@gmail.com",
-                               :password  => "01793326",
+                               :domain    => "learnet.se",
+                               :user_name => "jannike.rivelsrud@elev.it-gymnasiet.se",
+                               :password  => "Petter",
                                :authentication => 'plain',
                                :enable_starttls_auto => true }
     end
