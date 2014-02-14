@@ -1,5 +1,7 @@
 class Ekouf < Sinatra::Base
   enable :sessions
+  require 'mail'
+  require_relative 'models/email'
 
   get '/' do
     slim :index
@@ -20,14 +22,6 @@ class Ekouf < Sinatra::Base
   get '/about/#vision' do
     slim :"about/omoss"
   end
-  #
-  #get '/about/organisation' do
-  #  slim :"about/info"
-  #end
-  #
-  #get '/about/#bussinesplan' do
-  #  slim :"about/omoss"
-  #end
 
   get '/about' do
     slim :"about/omoss"
@@ -43,5 +37,18 @@ class Ekouf < Sinatra::Base
 
   get '/contact' do
     slim :contact
+  end
+
+  post '/neworder' do
+    content = []
+    content << params[:name]
+    content << params[:address]
+    content << params[:post]
+    content << params[:phone]
+    content << params[:amount]
+
+    Email.order(content)
+    Order.new(name: params[:name], address: params[:address], post: params[:post], phone: params[:phone], amount: params[:amount] )
+    redirect '/product/order'
   end
 end

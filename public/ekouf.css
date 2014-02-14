@@ -182,3 +182,14 @@ p {
 #vision {
     margin-top: 4%;
 }
+
+#neworder {
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#neworder input {
+    margin-top: 2%;
+    width: 99%;
+}

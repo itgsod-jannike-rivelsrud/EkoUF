@@ -1,7 +1,8 @@
-/form method="post" action="mailto:jannike.rivelsrud@elev.it-gymnasiet.se" enctype="text/plain"
-/  input type="text" name="namn" placeholder="Namn"
-/  input type="text" name="adress" placeholder="Adress"
-/  input type="text" name="nummer" placeholder="Nummer"
-/  input type="text" name="antal" placeholder="Antal"
-/  button type="submit" Skicka Beställning
-  /heroku use this you iddits!
+#neworder
+  form action="/neworder" method="post"
+    input type="text" name="name" placeholder="Förnamn Efternamn"
+    input type="text" name="address" placeholder="Adress"
+    input type="text" name="post" placeholder="Postnummer och ort"
+    input type="text" name="phone" placeholder="Telefonnummer"
+    input type="text" name="amount" placeholder="Antal"
+    input type="submit" value="Skicka beställning"
