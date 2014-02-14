@@ -24,7 +24,7 @@ class Ekouf < Sinatra::Base
   end
 
   get '/organisation' do
-    slim :"about/omoss"
+    slim :"about/info"
   end
 
   get '/tips' do

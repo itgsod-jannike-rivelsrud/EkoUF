@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="85e6a35e-55d9-46a6-8c19-811bc99912e7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ekouf.rb" afterPath="$PROJECT_DIR$/ekouf.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/layout.slim" afterPath="$PROJECT_DIR$/views/layout.slim" />
     </list>
     <list id="203ba955-0aaa-43d6-b589-646c87417c8d" name="New changelist" comment="" />
     <ignored path="EkoUF.iws" />
@@ -11,7 +10,7 @@
     <file path="/development.rb" changelist="85e6a35e-55d9-46a6-8c19-811bc99912e7" time="1384276074596" ignored="false" />
     <file path="/environment.rb" changelist="85e6a35e-55d9-46a6-8c19-811bc99912e7" time="1384276097609" ignored="false" />
     <file path="/temp.rb" changelist="85e6a35e-55d9-46a6-8c19-811bc99912e7" time="1384276130323" ignored="false" />
-    <file path="/ekouf.rb" changelist="85e6a35e-55d9-46a6-8c19-811bc99912e7" time="1392385853445" ignored="false" />
+    <file path="/ekouf.rb" changelist="85e6a35e-55d9-46a6-8c19-811bc99912e7" time="1392385980730" ignored="false" />
     <file path="/layout.slim" changelist="85e6a35e-55d9-46a6-8c19-811bc99912e7" time="1392385844403" ignored="false" />
     <file path="/ekouf.css" changelist="85e6a35e-55d9-46a6-8c19-811bc99912e7" time="1392373582312" ignored="false" />
     <file path="/Dummy.txt" changelist="85e6a35e-55d9-46a6-8c19-811bc99912e7" time="1392371800042" ignored="false" />
@@ -43,7 +42,7 @@
     <file path="/user.rb" changelist="85e6a35e-55d9-46a6-8c19-811bc99912e7" time="1392376895348" ignored="false" />
     <file path="/tips.rb" changelist="85e6a35e-55d9-46a6-8c19-811bc99912e7" time="1392376999185" ignored="false" />
     <file path="/email.rb" changelist="85e6a35e-55d9-46a6-8c19-811bc99912e7" time="1392385328693" ignored="false" />
-    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="85e6a35e-55d9-46a6-8c19-811bc99912e7" time="1392385749926" ignored="false" />
+    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="85e6a35e-55d9-46a6-8c19-811bc99912e7" time="1392385959474" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,10 +62,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ekouf.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ekouf.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ekouf.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="8" selection-start="385" selection-end="385" vertical-scroll-proportion="0.0">
+            <state line="26" column="21" selection-start="423" selection-end="423" vertical-scroll-proportion="0.66780823">
               <folding />
             </state>
           </provider>
@@ -126,10 +125,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="layout.slim" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="layout.slim" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/layout.slim">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="23" selection-start="729" selection-end="729" vertical-scroll-proportion="0.20418848">
+            <state line="21" column="23" selection-start="729" selection-end="729" vertical-scroll-proportion="-4.875">
               <folding />
             </state>
           </provider>
@@ -176,8 +175,8 @@
         <option value="$PROJECT_DIR$/models/order.rb" />
         <option value="$PROJECT_DIR$/views/product/order.slim" />
         <option value="$PROJECT_DIR$/models/email.rb" />
-        <option value="$PROJECT_DIR$/ekouf.rb" />
         <option value="$PROJECT_DIR$/views/layout.slim" />
+        <option value="$PROJECT_DIR$/ekouf.rb" />
       </list>
     </option>
   </component>
@@ -260,6 +259,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="product" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EkoUF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EkoUFheroku" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="about" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -643,16 +660,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ekouf.rb">
+    <entry file="file://$PROJECT_DIR$/views/layout.slim">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="8" selection-start="385" selection-end="385" vertical-scroll-proportion="0.0">
+        <state line="21" column="23" selection-start="729" selection-end="729" vertical-scroll-proportion="-4.875">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/layout.slim">
+    <entry file="file://$PROJECT_DIR$/ekouf.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="23" selection-start="729" selection-end="729" vertical-scroll-proportion="0.20418848">
+        <state line="26" column="21" selection-start="423" selection-end="423" vertical-scroll-proportion="0.66780823">
           <folding />
         </state>
       </provider>
