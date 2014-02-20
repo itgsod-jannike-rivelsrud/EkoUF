@@ -1,5 +1,6 @@
 class Email
   require 'mail'
+               #iiiiiiiih!
   def self.order(content)
     Mail.defaults do
       delivery_method :smtp, { :address   => "smtp.sendgrid.net",
