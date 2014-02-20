@@ -19,7 +19,7 @@ class Ekouf < Sinatra::Base
     slim :"product/statistics"
   end
 
-  get '/about/#vision' do
+  get '/about' do
     slim :"about/omoss"
   end
 
