@@ -22,7 +22,7 @@ class Email
         content_type 'text/html; charset=UTF-8'
         body "Namn: #{content.first},
               Adress: #{content[1]},
-              Post-nummer och -adress: #{content[2]},
+              Post-nummer och -ort: #{content[2]},
               Telefonnummer: #{content[3]},
               Antal: #{content.last}"
 
