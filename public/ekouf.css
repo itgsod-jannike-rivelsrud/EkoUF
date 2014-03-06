@@ -193,3 +193,10 @@ p {
     margin-top: 2%;
     width: 99%;
 }
+
+.front {
+    float: left;
+    width: 19%;
+    margin-left: 1%;
+    min-height: 50%;
+}
