@@ -51,4 +51,37 @@ class Ekouf < Sinatra::Base
     Order.new(name: params[:name], address: params[:address], post: params[:post], phone: params[:phone], amount: params[:amount] )
     redirect '/product/order'
   end
+
+  post '/newvalue' do
+    @value = params[:value]
+    redirect '/product/statistics'
+  end
+
+  get '/company/login' do
+    slim :'/company/login'
+  end
+
+  post '/login' do
+    user = User.first(username: params['username'])
+    if user && user.password == params['password']
+      session[:user] = user.id
+      redirect "/company/inlog/#{user.id}"
+    else
+      redirect '/company/login'
+    end
+  end
+
+  get '/company/inlog/:id' do |id|
+    if session[:user] == id.to_i
+      @user = User.get(session[:user])
+      slim :"/company/startpage"
+    else
+      redirect "/company/login"
+    end
+  end
+
+  post '/logout' do
+    session.destroy
+    redirect '/'
+  end
 end

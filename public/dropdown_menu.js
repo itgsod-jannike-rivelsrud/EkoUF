@@ -18,13 +18,4 @@ $(document).ready(function () {
             $('ul.file_menu2').slideUp('fast');
         }
     );
-
-//    $(".file_menu li").hover(
-//        function () {
-//            $(this).children("ul").slideDown('medium');
-//        },
-//        function () {
-//            $(this).children("ul").slideUp('medium');
-//        }
-//    );
 });

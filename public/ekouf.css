@@ -209,3 +209,11 @@ p {
     font-family: "Times New Roman";
     text-align: center;
 }
+
+.stat {
+    background-color: #dd9;
+    margin: 5px;
+    vertical-align: bottom;
+    display: inline-block;
+    font-size: 25px;
+}
