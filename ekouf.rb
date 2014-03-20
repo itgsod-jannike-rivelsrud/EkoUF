@@ -28,6 +28,7 @@ class Ekouf < Sinatra::Base
   end
 
   get '/tips' do
+    @tips = Tips.all
     slim :tips
   end
 
@@ -48,7 +49,7 @@ class Ekouf < Sinatra::Base
     content << params[:amount]
 
     Email.order(content)
-    Order.new(name: params[:name], address: params[:address], post: params[:post], phone: params[:phone], amount: params[:amount] )
+    Order.create(name: params[:name], address: params[:address], post: params[:post], phone: params[:phone], amount: params[:amount])
     redirect '/product/order'
   end
 
@@ -65,14 +66,14 @@ class Ekouf < Sinatra::Base
     user = User.first(username: params['username'])
     if user && user.password == params['password']
       session[:user] = user.id
-      redirect "/company/inlog/#{user.id}"
+      redirect "/company/inlog"
     else
       redirect '/company/login'
     end
   end
 
-  get '/company/inlog/:id' do |id|
-    if session[:user] == id.to_i
+  get '/company/inlog' do
+    if session[:user]
       @user = User.get(session[:user])
       slim :"/company/startpage"
     else
@@ -83,5 +84,36 @@ class Ekouf < Sinatra::Base
   post '/logout' do
     session.destroy
     redirect '/'
+  end
+
+  get '/company/orders' do
+    if session[:user]
+      @user = User.get(session[:user])
+      @orders = Order.all
+      slim :"/company/orders"
+    else
+      redirect "/company/login"
+    end
+  end
+
+  get '/company/tips' do
+    if session[:user]
+      @user = User.get(session[:user])
+      slim :"/company/tips"
+    else
+      redirect '/tips'
+    end
+  end
+
+  post '/newtips' do
+    Tips.create(text: params[:content], image: params[:image])
+    redirect 'company/tips'
+  end
+
+  post '/deleteorder' do
+    order = Order.get(params[:id])
+    order.inspect
+    order.destroy
+    redirect '/company/orders'
   end
 end

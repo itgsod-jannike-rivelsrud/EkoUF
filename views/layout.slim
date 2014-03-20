@@ -37,8 +37,12 @@ html
               a href="/product/order" Beställ
             li
               a href="/product/statistics" Statistik
-      a href="/tips" class="knapp"
-        img src="/pictures/tips.png"
+      -if @user
+        a href="/company/tips" class="knapp"
+          img src="/pictures/tips.png"
+      -else
+        a href="/tips" class="knapp"
+          img src="/pictures/tips.png"
       a href="/env" class="knapp"
         img src="/pictures/miljo.png"
       a href="/contact" class="knapp"

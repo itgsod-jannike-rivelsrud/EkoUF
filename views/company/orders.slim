@@ -1,0 +1,15 @@
+-total = 0
+-amount = 0
+-orders = []
+-@orders.each do |order|
+  -orders << "#{order.id}. #{order.name}, #{order.amount}st"
+  -total += 1
+  -amount += order.amount
+h4 = "Totalt: #{total} ordrar med sammanlagt: #{amount} produkter"
+-index = 1
+-orders.each do |listitem|
+  p = listitem
+  form action="/deleteorder" method="post"
+    input type="hidden" name="id" value="#{listitem.chr}"
+    button type="submit" Ta bort order
+  -index += 1
